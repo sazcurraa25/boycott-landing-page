@@ -4,30 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nightshift</title>
-    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="../../Style/style.css">
 </head>
 <body>
     <header class="upstep">
-        <img src="/Img/boycott.jpg" alt="boycott" #="boycott-img">
+        <img src="../../Img/boycott.jpg" alt="boycott" #="boycott-img">
         <div class="principal-header">
-            <a href="/Body/Header/about-us.html" class="header-tools">Sobre nosotros</a>
-            <a href="/Body/Header/contact-us.html" class="header-tools">Contactanos</a>
-            <a href="/Body/Header/frecuent-questions.html" class="header-tools">Preguntas frecuentes</a>
-            <a href="/Body/Header/carrito.html" class="header-tools"><img src="/Img/3144456.png" alt="Carrito"></a>
+            <a href="../Header/about-us.html" class="header-tools">Sobre nosotros</a>
+            <a href="../Header/contact-us.html" class="header-tools">Contactanos</a>
+            <a href="../Header/frecuent-questions.html" class="header-tools">Preguntas frecuentes</a>
+            <a href="../Header/carrito.html" class="header-tools"><img src="/Img/3144456.png" alt="Carrito"></a>
         </div>
         <div class="principal-products">
-            <a href="index.html" class="main-buttons">Inicio</a>
-            <a href="/Body/Header/products.html" class="main-buttons">Productos</a>
+            <a href="../../index.html" class="main-buttons">Inicio</a>
+            <a href="../Mid/all-products.html" class="main-buttons">Productos</a>
         </div>
     </header>
     <body class="mark">
         <h1 class="title-drop"></h1>
-        <div class="lateral-right">
-        </div>
         <div class="lateral-left">
-            <div class="color-filter"></div>
-            <div class="size-filter"></div>
-            <div class="price-filter"></div>
+            <h3 class="filters">Filtros</h3>
+            <div class="color-filter">
+                <div class="color">
+                    <div class="frame"></div>
+                    <p class="color-clothes">Beige</p>
+                </div>
+                <div class="color">
+                    <div class="frame"></div>
+                    <p class="color-clothes">Negro</p>
+                </div>
+                <div class="color">
+                    <div class="frame"></div>
+                    <p class="color-clothes">Gris</p>
+                </div>
+            </div>
+            <div class="size-filter">
+                <div class="size">
+                    <div class="frame"></div>
+                    <p class="size-type">36</p>
+                </div>
+                <div class="size">
+                    <div class="frame"></div>
+                    <p class="size-type">42</p>
+                </div>
+                <div class="size">
+                    <div class="frame"></div>
+                    <p class="size-type">S</p>
+                </div>
+                <div class="size">
+                    <div class="frame"></div>
+                    <p class="size-type">M</p>
+                </div>
+                <div class="size">
+                    <div class="frame"></div>
+                    <p class="size-type">L</p>
+                </div>
+                <div class="size">
+                    <div class="frame"></div>
+                    <p class="size-type">XL</p>
+                </div>
+            </div>
+            <div class="price-filter">
+                <div class="price">
+                    <div class="start-price">
+                        <label for="minimus-price">Desde</label>
+                        <input type="text" name="minimus-price" id="minimus-price" placeholder="Desde $15.000">
+                    </div>
+                    <div class="end-price">
+                        <label for="maximus-price">Hasta</label>
+                        <input type="text" name="maximus-price" id="maximus-price" placeholder="Hasta $45.000">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lateral-right">
+            <div class="type-clothes">
+               <div class="type-clothes">
+                <img src="../../Img/Nightshift/buzo-nightshift-gris.jpg" alt="buzo-nightshift-gris" class="photo-product">
+                <h3 class="clothes-title">Buzo Nightshift gris</h3>
+                <p class="price-clothes">$25.000,00</p>
+               </div>
+               <div class="type-clothes">
+                <img src="../../Img/Nightshift/jean-nightshift-oxido.jpg" alt="jean-nightshift-oxido" class="photo-product">
+                <h3 class="clothes-title">Jean Oxido</h3>
+                <p class="price-clothes">$45.000,00</p>
+               </div>
+            </div>
         </div>
     </body>
     <footer class="downstep">
