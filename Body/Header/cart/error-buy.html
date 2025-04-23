@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indicanos tus datos</title>
+    <title>¿Que sucedió?</title>
     <link rel="stylesheet" href="../../../Style/style.css">
 </head>
 <body>
@@ -21,28 +21,30 @@
         </div>
     </header>
     <body class="mark">
-        <h1 class="data-input">INDICANOS TUS DATOS</h1>
-        <div class="area-contact">
-            <div class="name">
-                <input type="text" name="name" id="name" placeholder="Nombre">
-                <input type="text" name="l-name" id="l-name" placeholder="Apellido">
-            </div>
-            <div class="address">
-                <input type="text" name="address" id="address" placeholder="Dirección">
-                <input type="text" name="number" id="number" placeholder="Numero">
-                <input type="text" name="dpto" id="dpto" placeholder="Departamento">
-            </div>
-            <div class="address2">
-                <input type="number" name="postal-code" id="postal-code" placeholder="Código postal">
-                <input type="text" name="city" id="city" placeholder="Localidad/Barrio/Comuna">
-            </div>
-            <div class="contact-things">
-                <input type="number" name="phone" id="phone" placeholder="Telefono">
-                <input type="text" name="e-mail" id="e-mail" placeholder="Mail">
-            </div>
+        <div class="principal-title">
+            <h1 class="question">¿Hubo un error en tu compra?</h1>
+            <h2 class="attencion">Brindanos los datos de tu compra para poder ayudarte</h2>
         </div>
-        <a href="pago.html"><button class="go-to-pay">Continuar</button></a>
-        <p class="disclaimer">Revisa que todos los datos sean correctos, Boycott no se hará cargo de una entrega mal hecha por un dato erroneo.</p>
+        <div class="information-packages">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre">
+            <label for="l-name">Apellido</label>
+            <input type="text" name="l-name" id="l-name" placeholder="Apellido">
+            <label for="phone">Teléfono</label>
+            <input type="text" name="phone" id="phone" placeholder="Telefono">
+            <label for="e-mail">Mail</label>
+            <input type="text" name="e-mail" id="e-mail" placeholder="Mail">
+            <label for="buy-order">Numero de orden</label>
+            <input type="text" name="buy-order" id="buy-order" placeholder="Numero de orden">
+            <label for="date">Fecha de compra</label>
+            <input type="text" name="date" id="date" placeholder="Fecha de compra">
+            <label for="message">¿Que fue lo que sucedió?</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="¿Cual fue el inconveniente que tuviste con tu compra?"></textarea>
+        </div>
+        <div class="btn">
+            <input type="submit" class="btn" value="Enviar">
+        </div>
+        <p class="disclaimer">Revisa que todos los datos sean correctos, Boycott no se hará cargo por un dato erroneo.</p>
     </body>
     <footer class="downstep">
         <div class="follow-us">
