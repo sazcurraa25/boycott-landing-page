@@ -12,9 +12,9 @@ body{
     flex-wrap: wrap;
 
 }
-.boycott-img {
-    height: 50px;
-    width: 50px;
+#boycott-img {
+    height: 20px;
+    width: 20px;
     
 }
 p{
