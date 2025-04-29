@@ -1,15 +1,25 @@
 body{
     background-color: black;
+
 }
 .upstep {
     margin: 0;
     padding: 0;
     border-color: white;
     border-width: 2px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
-#boycott-img {
-    height: 20px;
-    width: 20px;
+.boycott-img {
+    height: 50px;
+    width: 50px;
     
+}
+p{
+    color: white;
+}
+h1{
+    color: white;
 }
