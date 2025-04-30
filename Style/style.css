@@ -1,28 +1,63 @@
 body{
     background-color: black;
-
-}
-.upstep {
     margin: 0;
     padding: 0;
-    border-color: white;
-    border-width: 2px;
+}
+.upstep {
     display: flex;
-    flex-wrap: wrap;
-    width: 100px;
-    height: 100%;
+    flex-direction: column;
     align-items: center;
-    align-content: center;
-
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .boycott-img {
-    height: 50px;
-    width: 50px;
-    
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;  
+}
+.principal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.principal-products {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+.header-tools, .main-buttons {
+    color: white;
+    text-decoration: none;
+    font-size: 62.5%;
+    font-size: 1.1em;
 }
 p{
     color: white;
 }
 h1{
     color: white;
+}
+@media (min-width: 768px) {
+    header.upstep {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+    }
+    .boycott-img {
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+    }
+    .principal-header {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+    .principal-products {
+        justify-content: center;
+    }
 }
