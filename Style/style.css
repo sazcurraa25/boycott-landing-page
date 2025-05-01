@@ -11,6 +11,13 @@ body{
     width: 100%;
     box-sizing: border-box;
 }
+#cart img{
+    height: 24px;
+    width: auto
+}
+.logo-container {
+    margin: 10px 0;
+}
 .boycott-img {
     height: 60px;
     width: 60px;
@@ -41,11 +48,9 @@ h1{
     color: white;
 }
 @media (min-width: 768px) {
-    header.upstep {
-        flex-direction: row;
-        justify-content: space-between;
+    .upstep {
+        flex-direction: column;
         align-items: center;
-        height: 150px;
     }
     .boycott-img {
         margin: 0 auto;
@@ -54,10 +59,14 @@ h1{
     }
     .principal-header {
         flex-direction: row;
-        justify-content: center;
-        gap: 15px;
+        justify-content: flex-end;
+        padding-right: 30px;
     }
     .principal-products {
         justify-content: center;
+        gap: 25px;
+    }
+    #cart img{
+        width: 30px;
     }
 }
