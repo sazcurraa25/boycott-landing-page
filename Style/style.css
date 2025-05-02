@@ -4,26 +4,28 @@ body{
     padding: 0;
 }
 .upstep {
+width: 100%;
+padding: 10px;
+box-sizing: border-box;
+text-align: center;
+}
+.upstep-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
 }
 #cart img{
     height: 24px;
     width: auto
 }
 .logo-container {
-    margin: 10px 0;
+    margin: 10px;
 }
 .boycott-img {
-    height: 60px;
-    width: 60px;
-    margin-bottom: 10px;  
+    height: auto;
+    width: 60px;  
 }
-.principal-header {
+.links-principal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +35,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .header-tools, .main-buttons {
     color: white;
@@ -48,25 +50,38 @@ h1{
     color: white;
 }
 @media (min-width: 768px) {
-    .upstep {
-        flex-direction: column;
+    .upstep-content {
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        position: relative;
+        padding: 0 20px;
     }
-    .boycott-img {
-        margin: 0 auto;
-        width: 150px;
-        height: 150px;
+    .logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0;
+        z-index: 1;
     }
-    .principal-header {
+    .principal-products{
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    .links-principal {
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        padding-right: 30px;
-    }
-    .principal-products {
+        gap: 15px;
+        margin-left: auto;
         justify-content: center;
-        gap: 25px;
+    }
+    .boycott-img {
+        width: 100px;
+        height: auto;
     }
     #cart img{
         width: 30px;
+        height: auto;
     }
 }
